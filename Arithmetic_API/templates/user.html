@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        <p>Number 1: </p> <input type="number" name="num1" id="num1">
+        <p>Operation: </p> 
+        <input type="radio" name="operation" id="operation" value="add">Add<br>
+        <input type="radio" name="operation" id="operation" value="subtract">Subtract<br>
+        <input type="radio" name="operation" id="operation" value="multiply">Multiply<br>
+        <input type="radio" name="operation" id="operation" value="divide">Divide<br>
+        <p>Number 2: </p> <input type="number" name="num2" id="num2">
+        
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
